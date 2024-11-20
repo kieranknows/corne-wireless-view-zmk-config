@@ -186,10 +186,10 @@
 
         ESDF {
             bindings = <
-&kp ESCAPE    &kp TAB         &kp Q  &kp W         &kp E      &kp R           &kp T  &kp Y     &kp UP_ARROW  &kp I      &kp O    &kp P
-&kp NUMBER_2  &kp NUMBER_1    &kp A  &kp S         &kp D      &kp F           &kp G  &kp LEFT  &kp DOWN      &kp RIGHT  &kp L    &kp ENTER
-&kp LCTRL     &kp LEFT_SHIFT  &kp Z  &kp X         &kp C      &kp V           &kp B  &kp N     &kp M         &kp COMMA  &kp DOT  &to 0
-                                     &kp NUMBER_4  &kp SPACE  &kp NUMBER_3    &mo 2  &kp BSPC  &trans
+&kp ESCAPE    &kp TAB         &kp Q  &kp W      &kp E      &kp R           &kp T  &kp Y     &kp UP_ARROW  &kp I      &kp O    &kp P
+&kp NUMBER_1  &kp CAPSLOCK    &kp A  &kp S      &kp D      &kp F           &kp G  &kp LEFT  &kp DOWN      &kp RIGHT  &kp L    &kp ENTER
+&kp NUMBER_2  &kp LEFT_SHIFT  &kp Z  &kp X      &kp C      &kp V           &kp B  &kp N     &kp M         &kp COMMA  &kp DOT  &to 0
+                                     &kp LCTRL  &kp SPACE  &kp NUMBER_3    &mo 2  &kp BSPC  &trans
             >;
 
             label = "ESDF";
