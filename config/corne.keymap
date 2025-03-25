@@ -116,7 +116,7 @@
 &trans  &kp Q                &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT                  &trans
 &trans  &hml LEFT_WIN A      &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O                    &trans
 &trans  &Tap_Pref_Layer 4 Z  &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &Tap_Pref_Layer 5 SLASH  &trans
-                                              &trans        &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &none
+                                              &mo 5         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &to 5
             >;
         };
 
@@ -133,10 +133,10 @@
 
         Nav_Layer {
             bindings = <
-&trans  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END      &kp INSERT  &trans
-&trans  &kp LGUI         &kp LALT     &kp LCTRL         &kp LSHFT          &trans                    &kp MINUS      &kp LEFT   &kp DOWN      &kp RIGHT    &kp DELETE  &trans
-&trans  &kp LC(Z)        &kp LC(X)    &kp LC(C)         &kp LC(V)          &kp LS(LC(V))             &kp PAGE_DOWN  &mkp LCLK  &mkp MCLK     &kp LS(F10)  &trans      &trans
-                                      &trans            &trans             &Hold_Pref_Layer 3 TAB    &trans         &trans     &none
+&trans  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END      &kp INSERT  &trans
+&trans  &kp LGUI         &kp LALT     &kp LCTRL         &kp LSHFT          &trans                    &kp MINUS      &kp LEFT  &kp DOWN      &kp RIGHT    &kp DELETE  &trans
+&trans  &kp LC(Z)        &kp LC(X)    &kp LC(C)         &kp LC(V)          &kp LS(LC(V))             &kp PAGE_DOWN  &trans    &mkp MCLK     &kp LS(F10)  &trans      &trans
+                                      &trans            &trans             &Hold_Pref_Layer 3 TAB    &trans         &trans    &none
             >;
 
             label = "Navigate";
@@ -164,13 +164,15 @@
             label = "Function";
         };
 
-        Media {
+        Mouse {
             bindings = <
-&trans  &trans    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans             &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &trans  &trans
+&trans  &trans    &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT         &trans             &msc SCRL_UP    &msc SCRL_UP    &mmv MOVE_UP    &msc SCRL_DOWN   &trans  &trans
 &trans  &kp LGUI  &kp LALT        &kp LCTRL         &kp LSHFT          &trans             &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans    &trans          &trans            &trans             &trans             &trans          &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &trans  &trans
-                                  &kp C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &mkp LCLK       &mkp RCLK       &mkp MCLK
+&trans  &trans    &trans          &trans            &trans             &kp C_MUTE         &trans          &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &trans  &trans
+                                  &trans            &kp C_VOLUME_DOWN  &kp C_VOLUME_UP    &mkp LCLK       &mkp RCLK       &to 0
             >;
+
+            label = "Mouse";
         };
 
         QWERTY {
