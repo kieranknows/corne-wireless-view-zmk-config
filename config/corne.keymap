@@ -113,9 +113,9 @@
 
             label = "Base";
             bindings = <
-&trans  &kp Q                &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U      &kp Y       &kp SQT                  &trans
-&trans  &hml LEFT_WIN A      &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &kp N                               &kp E      &kp I       &kp O                    &trans
-&trans  &Tap_Pref_Layer 4 Z  &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA  &kp PERIOD  &Tap_Pref_Layer 5 SLASH  &trans
+&trans  &kp Q                &kp W            &kp F         &kp P                     &kp B                     &kp J                     &kp L                               &kp U                &kp Y            &kp SQT                  &trans
+&trans  &hml LEFT_WIN A      &hml LEFT_ALT R  &hml LCTRL S  &hml LEFT_SHIFT T         &kp G                     &kp M                     &hmr LEFT_SHIFT N                   &hmr LEFT_CONTROL E  &hmr LEFT_ALT I  &hmr LEFT_WIN O          &trans
+&trans  &Tap_Pref_Layer 4 Z  &kp X            &kp C         &kp D                     &kp V                     &kp K                     &kp H                               &kp COMMA            &kp PERIOD       &Tap_Pref_Layer 5 SLASH  &trans
                                               &mo 5         &Tap_Pref_KP LCTRL SPACE  &Hold_Pref_Layer 1 TAB    &Hold_Pref_Layer 2 ENTER  &Hold_Pref_KP LEFT_SHIFT BACKSPACE  &to 5
             >;
         };
@@ -133,10 +133,10 @@
 
         Nav_Layer {
             bindings = <
-&trans  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME  &kp UP_ARROW  &kp END      &kp INSERT  &trans
-&trans  &kp LGUI         &kp LALT     &kp LCTRL         &kp LSHFT          &trans                    &kp MINUS      &kp LEFT  &kp DOWN      &kp RIGHT    &kp DELETE  &trans
-&trans  &kp LC(Z)        &kp LC(X)    &kp LC(C)         &kp LC(V)          &kp LS(LC(V))             &kp PAGE_DOWN  &trans    &mkp MCLK     &kp LS(F10)  &trans      &trans
-                                      &trans            &trans             &Hold_Pref_Layer 3 TAB    &trans         &trans    &none
+&trans  &kp LC(LS(TAB))  &kp LC(TAB)  &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(UP_ARROW)          &kp PAGE_UP    &kp HOME   &kp UP_ARROW  &kp END    &kp INSERT  &trans
+&trans  &kp LGUI         &kp LALT     &kp LCTRL         &kp LSHFT          &trans                    &kp MINUS      &kp LEFT   &kp DOWN      &kp RIGHT  &kp DELETE  &trans
+&trans  &kp LC(Z)        &kp LC(X)    &kp LC(C)         &kp LC(V)          &kp LS(LC(V))             &kp PAGE_DOWN  &kp LC(V)  &kp LC(C)     &kp LC(X)  &kp LC(Z)   &trans
+                                      &trans            &trans             &Hold_Pref_Layer 3 TAB    &trans         &trans     &none
             >;
 
             label = "Navigate";
